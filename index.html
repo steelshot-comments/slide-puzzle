@@ -9,9 +9,9 @@
     <title>Solve</title>
   </head>
   <body>
-    <div class="w-full min-h-screen flex justify-evenly items-center">
+    <div class="w-full min-h-screen flex flex-col sm:flex-row justify-evenly items-center">
       <section id="canvas"></section>
-      <section class="flex flex-col">
+      <section class="flex sm:flex-col">
         <img
           src="./assets/Jo_star.png"
           alt="Jo_star"
@@ -151,7 +151,7 @@
       }
 
       function setup() {
-        var myCanvas = createCanvas(512, 512);
+        var myCanvas = createCanvas(320, 320);
         myCanvas.parent("canvas");
         w = width / cols;
         h = height / rows;
