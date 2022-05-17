@@ -130,6 +130,12 @@
         move(i, j, board);
       }
 
+      function touchStarted() {
+        let i = floor(mouseX / w);
+        let j = floor(mouseY / h);
+        move(i, j, board);
+      }
+
       class Tile {
         constructor(i, img) {
           this.index = i;
